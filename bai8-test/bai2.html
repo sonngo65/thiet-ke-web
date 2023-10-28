@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        var a3 = [];
+        arr1.forEach(function (value, index) {
+            if (a3.every(function (a) {
+                return a !== value;
+            })) {
+                a3.push(value);
+            }
+        })
+        var a2 = [];
+        for (let i = 0; i < a3.length; i++) {
+            let k = 0;
+            for (let j = 0; j < arr1.length; j++) {
+                if (a3[i] === arr1[j]) {
+                    k++;
+                }
+            }
+            a2.push(k);
+        }
+        a2.forEach((a,b) => {
+            if(a===Math.max.apply(null,a2)){
+                window.alert(a3[b]);
+            }
+        })
+    </script>
+</body>
+
+</html>

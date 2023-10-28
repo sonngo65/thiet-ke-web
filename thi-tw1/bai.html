@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 400px;
+            display:flex;
+            flex-direction: column;
+        }
+        .nhap{
+            display: flex;
+            justify-content: space-between;
+            margin-top:10px;
+        }
+        input{
+            padding:3px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="nhap" >
+            <label for="n">Nhập n: </label>
+            <input id="inner" type="text" onchange="a(event)">
+        </div>
+        <div class="nhap">
+            <label for="result">
+                Tổng n số nguyên tố đầu tiên: 
+            </label>
+            <input id="outer" type="text">
+        </div>
+        <div class="button">
+            <button onclick="add()">nhập</button>
+            <button>huỷ bỏ</button>
+        </div>
+    </div>
+  <script>
+    var inner = document.getElementById("inner");
+    var outer = document.getElementById("outer");
+    var b=0;
+    function check(k){
+        if(b<3){
+            return false
+        }
+        for(let i=2;i<=Math.sqrt(k);i++){
+            if(k%i===0){
+                return false;
+            }
+        }
+        return true;
+    }
+    function a(event){
+       
+        b=event.target.value
+    }
+    function add(){
+        let tong=0;
+        for(let i=1;i<=b;i++){
+            if(check(i)){
+                tong+=i;
+            }
+        }
+        outer.value=tong;
+    }
+  </script>
+   
+</body>
+</html>

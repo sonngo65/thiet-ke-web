@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 10px;
+    min-width: 60px;
+    min-height: 60px;
+    background-color: #fff;
+    border-radius:60px ;
+    transition: 0.5s;
+    box-shadow: 0 8px 16px 0 #889;
+}
+.btn .icon,
+.btn .title{
+}
+.btn .icon{
+    position:absolute;
+    margin: auto;
+    font-size:2rem;
+    transform: scale(1);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.btn:hover .icon{
+    transform: scale(0);
+    transition-delay:0;
+}
+.btn .title{
+    position: absolute;
+    transform: scale(0);
+    font-weight: 500;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:#fff;
+    transition:0.5s;
+    transition-delay:0;
+}
+.btn:hover .title{
+    transform: scale(1);
+    transition-delay:0.5s;
+}
+.btn:hover{
+    background:linear-gradient(90deg,var(--j),var(--i));
+    box-shadow: 0 8px 16px 0 #fff;
+}
+.btn::before{
+    content: '';
+    display: block;
+    position: relative;
+    left:0;
+    top:10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+   
+    filter: blur(20px);
+    transition: 0.5s;
+}
+.btn:hover::before{
+    background:linear-gradient(90deg,var(--j),var(--i));
+        width:200px;
+        height: 60px;
+    
+}

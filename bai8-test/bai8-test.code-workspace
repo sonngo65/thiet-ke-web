@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "bai8-test",
+			"path": "."
+		},
+		{
+			"name": "javascript-test",
+			"path": "../javascript-test"
+		},
+		{
+			"name": "test2-web",
+			"path": "../test2-web"
+		},
+		{
+			"name": "test1-web",
+			"path": "../test1-web"
+		},
+		{
+			"name": "bai5-web",
+			"path": "../bai5-web"
+		},
+		{
+			"name": "bai6_web",
+			"path": "../bai6_web"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "test2-web"
+	}
+}

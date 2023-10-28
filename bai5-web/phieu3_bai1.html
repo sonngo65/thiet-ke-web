@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="a">a:</label>
+    <input type="text" class="a" id="a">
+    <label for="a">b:</label>
+    <input type="text" name="b" class="b">
+    <label for="a">c:</label>
+    <input type="text" name="c" class="c">
+    <label for="a">a':</label>
+    <input type="text" name="a'" class="a1">
+    <label for="a">b':</label>
+    <input type="text" name="b'" class="b1">
+    <label for="a">c:</label>
+    <input type="text" name="c'" class="c1">
+    <button class="btn" onclick="myFunction()">giai</button>
+    <p class="p"> </p>
+    <script>
+
+        console.log(a);
+        function myFunction() {
+            let a = document.querySelector(".a").value;
+
+            let b = document.querySelector(".b").value;
+            let c = document.querySelector(".c").value;
+            let a1 = document.querySelector(".a1").value;
+            let b1 = document.querySelector(".b1").value;
+            let c1 = document.querySelector(".c1").value;
+            let input1 = document.querySelector(".btn");
+            let y1 = 0, x1 = 0;
+            let p = document.querySelector(".p");
+            if (b * a1 - b1 * a === 0) {
+                p.innerHTML = "vô nghiệm";
+            } else if (b * a1 - b1 * a === 0 && c * a1 - c1 * a === 0) {
+                p.innerHTML = "vô số nghiệm";
+            }
+            else {
+                if (c * a1 - c1 * a === 0) {
+                    y1 = 0;
+                }
+                else {
+                    y1 = (c * a1 - c1 * a) / (b * a1 - b1 * a)
+                    if (a1 === 0) {
+                        x1 = (c - b * y1) / a;
+                        p.innerHTML = `${x1},${y1}`
+                    }
+                    else if (a === 0) {
+                        x1 = (c1 - b1 * y1) / a1;
+                        p.innerHTML = `${x1},${y1}`
+
+                    }
+                    else if (a === 0 && a1 === 0) {
+                        p.innerHTML = "vô số nghiệm"
+                    }
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

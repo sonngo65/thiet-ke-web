@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mau">
+        <div>
+            <label>Enter your mail address</label>
+            <input type="text">
+            <button onclick="add()">add more</button>
+        </div>
+    </div>
+    <script>
+        function add() {
+            let cont = document.createElement("div");
+            let la = document.createElement("label");
+            let inp = document.createElement("input");
+            let but = document.createElement("button");
+            cont.classList.add("xoacha");
+            la.innerHTML = "Enter your mail address";
+            inp.type = "text";
+            but.innerHTML = "remove";
+            but.classList.add("xoa");
+            but.addEventListener("click",remove);
+            cont.appendChild(la);
+            cont.appendChild(inp);
+            cont.appendChild(but);
+            document.getElementById("mau").appendChild(cont);
+        }
+        function remove() {
+            let a=document.querySelector(".xoacha");
+            a.remove();
+        }
+    </script>
+</body>
+
+</html>

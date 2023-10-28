@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            text-align: center;
+            width: 400px;
+        }
+        div{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        input{
+            padding:4px 10px;
+        }
+        button{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <div>
+            <label>User Name</label>
+            <input type="text" placeholder="Nhập Tài Khoản">
+        </div>        
+        <div>
+            <label>Password </label>
+            <input onchange="textPass(event)" id="password" type="text" placeholder="Nhập Mật Khẩu">
+        </div>        
+        <button>Kiểm Tra PassWord</button>
+    </form>
+    <script>
+        function textPass(event){
+           var a= new RegExp("\{0,9}");
+         
+           console.log(  a.test("asffas1"))
+        }
+    </script>
+</body>
+</html>

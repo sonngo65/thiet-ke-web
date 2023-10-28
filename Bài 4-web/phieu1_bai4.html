@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: pink;
+        }
+
+        .container {
+            float: right;
+            width: 960px;
+        }
+
+        .header {
+            font-size: 30px;
+            width: 100%;
+            height: 100px;
+        }
+
+        .header h1 {
+            color: white;
+
+        }
+
+        .header h1 span {
+            color: black;
+            margin-left: 5px;
+        }
+
+        .menu_list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            height: 30px;
+            padding: 2px 0;
+            width: 100%;
+            background-color: #420000;
+        }
+
+        .menu_list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .menu_list li {
+            margin-top: -5px;
+
+        }
+
+        .menu_list li+li {
+            margin-left: 75px;
+        }
+
+        .body {
+            display: flex;
+        }
+
+        .sidebar_left {
+            background-color: #9d6f68;
+            flex: 1;
+            
+            width: 200px;
+        }
+
+        .sidebar_list {
+            list-style: none;
+        }
+
+        .sidebar_list li a{
+            text-decoration: none;
+            color: white;
+        }
+        .sidebar_list li{
+            padding: 16px 0;
+        }
+        .content {
+            flex: 3.5;
+        }
+        .content h1{
+            margin: 10px 0;
+        }
+        .content h3{
+            margin: 10px 0;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer p{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>slick<span>Red</span></h1>
+            <ul class="menu_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+        </div>
+        <div class="body">
+            <div class="sidebar_left">
+                <ul class="sidebar_list">
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Ajax</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">java</a></li>
+                    <li><a href="#">HTml</a></li>
+                    <li><a href="#">internet Marketing</a></li>
+                    <li><a href="#">XHTML Templates</a></li>
+
+                </ul>
+            </div>
+            <div class="content">
+                <h1>You may use this template in any manner you like. All I ask is that you leave
+                    the link back to my site at the bottom of the page. </h1>
+                <h3>Template Notes
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+
+                </p>
+                <h3>
+                    More information
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <h3>
+                    Template Notes
+
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>            florida web site| web tutorials | html  
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

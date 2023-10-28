@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         text-align: center;
+          
+        }
+        div{
+            margin-bottom: 10px;
+        }
+        button{
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>Tháng:</label>
+        <input type="text" onchange="setthang(event)">
+        <label >Năm:</label>
+        <input type="text" onchange="setnam(event)">
+    </div>
+    <div>
+
+        <label >Số ngày:</label>
+        <input type="text" class="ngay">
+    </div>
+
+    <button onclick="getngay()">Hiện thị số ngày của tháng</button>
+    <script>
+        let thang=0;
+        let nam=0;
+        function setthang(event){
+            thang=Number(event.target.value);
+            console.log(thang);
+
+        }
+        function setnam(event){
+            nam=Number(event.target.value);
+        }
+        var ngay = document.querySelector(".ngay");
+        function getngay(){
+            if(thang && nam && nam>0){
+                switch(thang){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    ngay.value="31";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    ngay.value="30";
+                    break;
+                case 2:
+                    if(nam%100!==0 && nam%4===0){
+                        ngay.value="29";
+                    }else{
+                        ngay.value="28";
+                    }
+                    break;
+                default:
+                    ngay.value="không hợp lệ"
+            }
+            }else{
+                ngay.value="không hợp lệ";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            display: none;
+        }
+        .result{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Tìm nghiệm phương trình bậc 2 ax<sup>2</sup> + bx + c = 0 với a=4 b=6 c=2
+    </h1>
+    
+    <button>Giải</button>
+    <p >
+        x<sub>1</sub> = -1<br>
+        x<sub>2</sub> = -1/2
+    </p>
+    <script>
+        document.querySelector("button").onclick=function(){
+            document.querySelector("p").classList.add("result")
+        }
+    </script>
+</body>
+</html>

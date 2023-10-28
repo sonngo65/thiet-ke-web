@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center  ;
+        }
+        label{
+            display: inline-block;
+            width: 200px;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>Nhập n:</label>
+        <input onchange="getn(event)" type="text"> 
+    </div>
+    <div>
+        <label>Tổng n số nguyên tố đầu tiên:</label>
+        <input class="result" type="text">
+       
+      
+    </div>
+   <div>
+    <button onclick="tong()">tính</button>
+    <button onclick="tong()">huỷ bỏ</button>
+   </div>
+   <script>
+        var n=0;
+        function getn(event){
+            n=Number(event.target.value);
+            console.log(n);
+        }
+        var result=document.querySelector(".result");
+        function check(i){
+            if(i<2){
+                return false;
+            }
+            for(let j=2;j<=Math.sqrt(i);j++){
+                if(i%j===0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        function tong(){
+            let count=0;
+            if(n){
+                for(let i=2;i<=n;i++){
+                   if(check(i)){
+                    count+=i;
+                   }
+                }
+                result.value=String(count);
+           
+            }else{
+                result.value="không hợp lệ";
+            }
+           
+        }
+   </script>
+</body>
+</html>

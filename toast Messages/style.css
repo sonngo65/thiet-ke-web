@@ -1,0 +1,31 @@
+.toast{
+    display: flex;
+    justify-content:center ;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 2px;
+    max-width: 450px;
+    min-width: 400px;
+    box-shadow:  0 8px 16px 0 rgba(0, 0, 0,0.08);
+    padding: 20px 0;
+    border-left: 4px solid;
+}
+.toast__icon,
+.toast__close{
+    font-size: 36px;
+    padding: 0 16px;
+}
+.toast__message{
+    flex-grow: 1;
+
+}
+.toast__content{
+    font-size: 26px;
+    font-weight: 700;
+    
+}
+.toast__text{
+    font-size: 18px;
+}
+.toast__icon{
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/base.css">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <title>The Band</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="the-band">
+            <div class="menu">
+
+            </div>
+            <div class="header-navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="#">home</a></li>
+                    <li class="navbar-item"><a href="#">about</a></li>
+                    <li class="navbar-item"><a href="#">members</a></li>
+                    <li class="navbar-item"><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="slide">
+                <img class="img_1" src="./assest/img/background-1.jpg" alt="">
+                <img class="img_2" src="./assest/img/background-2.jpg" alt="">
+                <img class="img_3" src="./assest/img/background-3.jpg" alt="">
+            </div>
+            <div class="band-descreption">
+                <h3 class="band-descreption-head">
+                    The Band
+                </h3>
+                <p class="band-descreption-text">
+                    This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="band-members">
+                <h3 class="band-member-head">
+                    Band Members
+                </h3>
+                <div class="band-member-imgs">
+                    <img class="band-member-img" src="./assest/img/img_bandmember.jpg" alt="">
+                    <img class="band-member-img" src="./assest/img/img_bandmember.jpg" alt="">
+                    <img class="band-member-img" src="./assest/img/img_bandmember.jpg" alt="">
+                </div>
+            </div>
+            <div class="band-contact">
+                <h3 class="band-contact-head">CONTACT</h3>
+                <span>Chicago, US</span>
+                <span>Phone: +00 151515</span>
+                <span>Email: mail@mail.com</span>
+            </div>
+            <div class="band-input">
+                <h3>Fan? Drop a note!</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Message">
+                <button>SEND</button>
+            </div>
+            <div class="band-map">
+                <img src="./assest/img/map.jpg" alt="">
+                <div class="band-power">
+                    Powered by w3.css
+                </div>
+            </div>
+        </div> 
+
+    </div>
+    <script>
+        let btn = document.querySelector('.menu');
+        let header = document.querySelector('.header-navbar');
+        btn.onclick=function(){
+            btn.classList.toggle("active");
+            header.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

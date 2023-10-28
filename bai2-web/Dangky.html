@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table width="700px" border="1" style="border-collapse: collapse;">
+        <caption><h1>Phiếu Đăng Ký Tham Gia Chương Trình Khuyến Mãi</h1></caption>
+        <tr>
+            <td>Họ Và Tên</td>
+            <td><input type="text" name="fullname" id="fullname"></td>
+        </tr>
+        <tr>
+            <td>Địa Chỉ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Điện Thoại</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Phái</td>
+            <td><input type="checkbox" id="nam">
+                <label for="nam">Nam</label>
+                <input type="checkbox" id="nu">
+                <label for="nu">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Nghề nghiệp</td>
+            <td>
+            <select name="field" id="field">
+            <option value="giaovien">Giáo Viên</option>     
+            </select>
+
+            </td>
+        </tr>                   
+        <tr>
+            <td>Chọn sản phẩm tham gia</td>
+            <td>
+                <select name="item" id="item" multiple>
+                    <option value="kemdanhrang">Kem đánh răng</option>
+                    <option value="botgiat">Bột giặt</option>
+                    <option value="daugoidau">Dầu gội đầu</option>
+                    <option value="suatam">Sữa tắm</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số người dự đoán tham gia</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button>Đồng ý</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

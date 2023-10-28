@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+  
+    p{
+        display: inline;
+    }
+   </style>
+</head>
+<body>
+    <p>Ngày tháng năm sinh: </p>
+    <select name="ngay" id="ngay">
+    </select>
+    <p>
+        Tháng:
+    </p>
+    <select name="thang" id="thang">
+
+    </select>
+    <p>
+        Năm:
+    </p>
+    <select name="nam" id="nam"></select>
+    <script>
+        let arrDay=[];
+        let arrMonth=[];
+        let arrYear=[];
+        for(let i=1;i<=31;i++){
+            arrDay.push(`<option> ${i} </option>`)
+        }
+        for(let i=1;i<=12;i++){
+            arrMonth.push(`<option> ${i} </option>`)
+        }
+        for(let i=1900;i<=2022;i++){
+            arrYear.push(`<option> ${i} </option>`)
+        }
+            document.querySelector("#ngay").innerHTML=arrDay.join("<br>")
+            document.querySelector("#thang").innerHTML=arrMonth.join("<br>")
+            document.querySelector("#nam").innerHTML=arrYear.join("<br>")
+            window.open("https://qlht.haui.edu.vn/mod/quiz/attempt.php?attempt=974489&cmid=364646&page=4","ddwera")
+            alert("Chào mừng bạn đến với chúng tôi <3")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+        <label for="1">
+            So thu nhat:
+        </label>
+        <input type="text">
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <button>^</button>
+
+        <label for="2">So thu hai:</label>
+        <input type="text">
+        <label for="3">ket qua</label>
+        <input type="text">
+
+  
+    <script>
+        let toanhang = document.getElementsByTagName("input");
+        let toantu = document.getElementsByTagName("button");
+        let a = 0, b = 0, c = "", kq = 0;
+        toanhang[0].onchange = function () {
+            a = Number(toanhang[0].value);
+
+        }
+        toanhang[1].onchange = function () {
+            b = Number(toanhang[1].value);
+
+        }
+        for (let i = 0; i < toantu.length; i++) {
+            toantu[i].onclick = function () {
+                c=toantu[i].innerHTML;
+                switch (c) {
+                    case "+":
+                        kq = a + b;
+                        break;
+                    case "-":
+                        kq = a - b;
+                        break;
+                    case "*":
+                        kq = a * b;
+                        break;
+                    case "/":
+                        kq = a / b;
+                        break;
+                    case "^":
+                        kq = Math.pow(a, b);
+                        break;
+
+                }
+                toanhang[2].value=kq;
+            }
+        }
+
+       
+    </script>
+</body>
+
+</html>

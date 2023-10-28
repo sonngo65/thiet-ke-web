@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    min-height: 100vh;
+
+}
+section header
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding:20px;
+}
+section header ul
+{
+    display: flex;
+
+}
+section header ul li 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li button
+{
+    background: #4584ef;
+    border: none ;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}

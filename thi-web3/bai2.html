@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: auto;
+            width: 600px;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;    
+        }
+        label{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        input{
+           margin-top: 10px;
+            width: 400px;
+        }
+        button{
+            
+            display: flex;
+            margin: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <div>
+            <label >Nhập Chuỗi</label>
+            <label >Số từ có 4 ký tự</label>
+        </div>
+        <div>
+            <input onchange="get(event)" type="text">
+            <input class="result" type="text">
+        </div>
+    </form>
+    <button  onclick="check()">nhập</button>
+    <script>
+        var a="";
+        function get(event){
+            a=event.target.value;
+        }
+        var b=document.querySelector(".result");
+;
+        function check(){
+            const patern1=/\s+/g;
+        var arr=a.replace(patern1," ");
+           let array = arr.split(" ");
+           var count=0;
+           array.forEach(value =>{
+             if(value.length===4 && (value[0]==="m" || value[0]==="M")){
+                count++;
+             }
+           })
+           b.value=count;
+        }
+
+    </script>
+</body>
+</html>

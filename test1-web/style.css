@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 1300px;
+    margin: auto;
+    height:200px;
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image img{
+
+
+}
+.search-box input{
+    
+    padding:7px;
+    width: 400px;
+    border: 1px solid rgb(177, 174, 174);
+}
+.search-box{
+    width: 400px;
+    position: relative;
+}
+.search-box select{
+    border: none;
+    border-left: 1px dotted rgb(177, 174, 174);
+    position: absolute;
+    top: 6px;
+    right: 2px;
+}   
+.search{
+    width: 500px;
+    display: flex;
+    
+}
+
+.search button{
+    border: none;
+    padding: 0 4px;
+    margin-left: 10px;
+    background-color: black;
+    color: white; 
+}
+button:hover{
+    background-color:green;
+    color: white;
+}
+.text-header{
+    display: block;
+    padding: 10px;
+    background-color: #ff3399;
+    color: white;
+}
+.text-header:hover{
+    background-color: yellow;
+    color: red;
+}
+.menu{
+    width:1300px;
+    margin: auto;
+}
+.menu > ul{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 50px;
+}
+ul li {
+    list-style-type: none;
+    background-color: black;
+    padding:0 38px;
+}
+ul li a{
+    display: block;
+     text-decoration: none;
+     color: white;
+     line-height: 50px;
+     text-align: center;
+}
+ul li:hover{
+    background-color: #ff3399;
+}
+.cha{
+    position:relative;
+}
+.con li{
+    width: 100%;
+    background-color: white;
+}
+.con li a{
+    color: black;
+}
+.con{
+    top:100%;
+    left: 0;
+    display: none;
+    position: absolute;
+    height: 50px;
+}
+.con li:hover{
+    border-bottom: 2px solid #ff3399;
+    background-color: white;
+    color: black;
+}
+.cha:hover .con{
+    display: block;
+}
+.content{
+    width: 1300px;
+    margin:auto;
+}
+.top-content{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.top-content button{
+    height: 30px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(202, 200, 200);
+    padding:5px 10px;
+    border-radius: 2px;
+}
+
+.top-content button:hover{
+    background-color: black;
+    color: white;
+}
+.search-list{
+    width: 200px;
+    height: 30px;
+}
+.page-list{
+    width: 45px;
+    height: 30px;
+}
+.top-content select{
+    border: 1px solid rgb(202, 200, 200);
+}
+.mid-content{
+    margin-top:30px;
+}
+.row{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.col{
+    width: 30%;
+    box-shadow: 10px 10px 10px 0 rgb(0, 0, 0,0.1);
+
+}
+.col img{
+    display: block;
+    width: 200px;
+    height: 400px;
+    margin: auto;
+}
+.col .destr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    background-color: #003366;
+    color: white;
+}
+.destr h6{
+    font-size: 30px;
+}
+.destr p{
+    color: red;
+    font-size: 25px;
+}
+p strike{
+    color: white;
+}
+.col:hover .destr{
+    background-color: rgb(233, 233, 119);
+}
